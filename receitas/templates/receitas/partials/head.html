@@ -78,6 +78,7 @@
             font-size: 1.6rem;
             font-family: var(--font-primary);
             background-color: var(--color-gray-1);
+            color: var(--color-dark-text);
         }
 
         h1,
@@ -188,6 +189,73 @@
 
         .receita-list-item:hover {
             transform: scale(1.02);
+            box-shadow: -8px 8px 18px rgba(0, 0, 0, .4);
+        }
+
+        .receita-title-container {
+            padding: var(--spacing-gutter-medium);
+            padding-bottom: 2rem;
+        }
+
+        .receita-autor {
+            padding: var(--spacing-gutter-medium);
+            padding-top: 0rem;
+            padding-bottom: 2rem;
+
+        }
+
+        .receita-content {
+            padding: var(--spacing-gutter-medium);
+            padding-top: 0rem;
+        }
+
+        .receita-autor-item {
+            color: var(--color-gray-4);
+            margin-right: 1rem;
+        }
+
+        .receita-autor a {
+            color: var(--color-primary);
+            transition: all 300ms ease-in-out;
+            text-decoration: none;
+        }
+
+        .receita-autor a:hover {
+            color: var(--color-primary-dark);
+        }
+
+        .recipe-meta-container {
+            display: flex;
+            flex-flow: row wrap;
+            padding: var(--spacing-gutter-medium);
+            background: var(--color-gray-1);
+        }
+
+        .recipe-meta {
+            display: flex;
+            flex-flow: column nowrap;
+            /* deixa em duas colunas ###*/
+            flex-shrink: 1;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .recipe-meta-title {
+            font-size: 1.6rem;
+        }
+
+        .recipe-footer a {
+            background: var(--color-primary-dark);
+            display: block;
+            color: var(--color-white);
+            text-decoration: none;
+            text-align: center;
+            padding: 1.5rem var(--spacing-gutter-medium);
+            transition: all 300ms ease-in-out;
+        }
+
+        .recipe-footer a:hover {
+            filter: brightness(2);
         }
     </style>
 </head>
