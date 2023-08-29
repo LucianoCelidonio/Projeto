@@ -9,6 +9,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.home),
-    path('receita/<int:id>/', views.receita1),
+    path('', views.home, name="recipes-home"),
+    path('receita/<int:id>/', views.receita1, name="recipes-recipe"),
 ]
